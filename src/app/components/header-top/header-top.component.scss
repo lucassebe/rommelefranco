@@ -1,0 +1,47 @@
+// styles.scss
+@import "../../../styles.scss";
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    justify-content: center; 
+    align-items: center;
+    background-color: $secondary-color;
+}
+
+.navbar .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.icon-container i {
+    color: $primary-color;
+    font-style: normal;
+}
+
+
+.icon-container a {
+    text-decoration: none;
+    color: inherit; 
+    transition: color 0.3s, background-color 0.3s; 
+  }
+  
+  .icon-container a:hover,
+  .icon-container a:focus {
+    color: $primary-color;
+
+  }
+
+
+@media (max-width: 600px){
+    .navbar{
+        display: none;
+    }
+}

@@ -1,0 +1,74 @@
+@import "../../../styles.scss";
+
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title {
+  background-color: $primary-color;
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding: 20px;
+}
+
+.centered-heading {
+  color: $secondary-color;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.img-fluid {
+  max-height: 410px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+}
+
+h1,
+p,
+h2 {
+  text-align: start;
+  color: $primary-color;
+}
+h2 {
+  margin-bottom: 30px;
+}
+h1 {
+  font-size: 80px;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  background-color: $secondary-color;
+  color: $primary-color;
+  gap: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: darken($secondary-color, 10%);
+  color: darken($primary-color, 10%);
+}
+
+.btn:active {
+  background-color: darken($secondary-color, 15%);
+  color: darken($primary-color, 15%);
+}

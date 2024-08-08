@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+$primary-color: #601310;
+$secondary-color: #dbc497;
+$terciary-color: #601310d4;
+
+body {
+  font-family: "Alexandria", sans-serif !important;
+}
+html {
+  scroll-behavior: smooth;
+}

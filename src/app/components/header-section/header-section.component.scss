@@ -1,0 +1,144 @@
+@import "../../../styles.scss";
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    background-image: url("../../../../public/img-grande.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 650px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+  }
+  
+  .card {
+    width: 700px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-left: 100px;
+    --bs-card-border-color: transparent;
+  }
+  
+  .card-img-top {
+    width: 75%;
+    height: auto;
+  }
+  
+  .card-title {
+    text-align: center;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    margin: 0;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+  }
+  
+  .btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: $secondary-color;
+    color: $primary-color;
+    gap: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .btn i {
+    font-size: 1.5rem;
+  }
+
+  .btn:hover,
+  .btn:focus {
+    background-color: darken($secondary-color, 10%);
+    color: darken($primary-color, 10%); 
+  }
+  
+  .btn:active {
+    background-color: darken($secondary-color, 15%); 
+    color: darken($primary-color, 15%); 
+  }
+  
+
+@media (max-width: 1200px) {
+    .card {
+        width: 90%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .container-fluid {
+        min-height: 500px;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-fluid {
+        min-height: 400px;
+    }
+    
+    .card {
+        width: 95%;
+        margin-left: 0;
+    }
+    
+    .card-img-top {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-fluid {
+        background-position: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card {
+        width: 400px;
+        border-radius: 15px;
+        padding: 15px;
+        background-color: transparent;
+    }
+    .card-title{
+        display: none;
+    }
+    
+    .btn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+    
+    .btn i {
+        font-size: 1.2rem;
+    }
+}
