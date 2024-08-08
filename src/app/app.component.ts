@@ -5,11 +5,12 @@ import { HeaderSectionComponent } from "./components/header-section/header-secti
 import { OurServicesComponent } from "./components/our-services/our-services.component";
 import { AboutUsComponent } from "./components/about-us/about-us.component";
 import { IframeVideoComponent } from "./components/iframe-video/iframe-video.component";
+import { WhatsappBtnComponent } from "./components/whatsapp-btn/whatsapp-btn.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderTopComponent, HeaderSectionComponent, OurServicesComponent, AboutUsComponent, IframeVideoComponent],
+  imports: [RouterOutlet, HeaderTopComponent, HeaderSectionComponent, OurServicesComponent, AboutUsComponent, IframeVideoComponent, WhatsappBtnComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -9,7 +9,7 @@
 }
 
 .title {
-  background-color: $primary-color;
+  //background-color: $primary-color;
   width: 100%;
   margin-top: 80px;
   margin-bottom: 80px;
@@ -17,7 +17,7 @@
 }
 
 .centered-heading {
-  color: $secondary-color;
+  color:$primary-color;
   text-align: center;
   margin-top: 80px;
   margin-bottom: 80px;
@@ -48,7 +48,12 @@ h2 {
   color: $primary-color;
 }
 h1{
-    font-size: 80px;
+    font-size: 60px;
+}
+h6{
+  color: $primary-color;
+  margin-bottom: 40px;
+  font-size: 22px;
 }
 
 .row {
@@ -63,8 +68,3 @@ h1{
 .col-md-12:last-child {
     margin-bottom: 0; 
 }
-
-// .divider {
-//     border-top: 1px solid $primary-color; 
-//     margin: 20px 0; 
-//   }
