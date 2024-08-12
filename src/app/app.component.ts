@@ -6,11 +6,14 @@ import { OurServicesComponent } from "./components/our-services/our-services.com
 import { AboutUsComponent } from "./components/about-us/about-us.component";
 import { IframeVideoComponent } from "./components/iframe-video/iframe-video.component";
 import { WhatsappBtnComponent } from "./components/whatsapp-btn/whatsapp-btn.component";
+import { MapComponent } from "./components/map/map.component";
+import { ReviewsComponent } from "./components/reviews/reviews.component";
+import { FooterComponent } from "./components/footer/footer.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderTopComponent, HeaderSectionComponent, OurServicesComponent, AboutUsComponent, IframeVideoComponent, WhatsappBtnComponent],
+  imports: [RouterOutlet, HeaderTopComponent, HeaderSectionComponent, OurServicesComponent, AboutUsComponent, IframeVideoComponent, WhatsappBtnComponent, MapComponent, ReviewsComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -1,52 +1,56 @@
-// styles.scss
 @import "../../../styles.scss";
 
 .container-fluid{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .logo{
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .navbar {
-    width: 100%;
-    height: 50px;
-    justify-content: center; 
-    align-items: center;
-    background-color: $secondary-color;
+  width: 100%;
+  height: 70px; /* Aumentamos a altura para 70px */
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  background-color: $secondary-color;
 }
 
 .navbar .icon-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px; /* Reduzimos o gap para telas maiores */
 }
 
 .icon-container i {
-    color: $primary-color;
-    font-style: normal;
+  color: $primary-color;
+  font-style: normal;
 }
 
-
 .icon-container a {
-    text-decoration: none;
-    color: inherit; 
-    transition: color 0.3s, background-color 0.3s; 
-  }
-  
-  .icon-container a:hover,
-  .icon-container a:focus {
-    color: $primary-color;
+  text-decoration: none;
+  color: inherit; 
+  transition: color 0.3s, background-color 0.3s; 
+}
 
-  }
-
+.icon-container a:hover,
+.icon-container a:focus {
+  color: $primary-color;
+}
 
 @media (max-width: 600px){
-    .navbar{
-        display: none;
-    }
+  .navbar {
+    height: auto; /* Permitimos que a altura se ajuste em telas menores */
+    flex-direction: column; /* Colocamos os itens em coluna */
+    padding: 10px 0; /* Adicionamos um pouco de padding */
+  }
+
+  .navbar .icon-container {
+    flex-direction: column; /* Itens em coluna também no container */
+    gap: 15px; /* Reduzimos ainda mais o gap em telas menores */
+  }
 }
