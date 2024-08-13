@@ -63,3 +63,18 @@ h6{
 .col-md-12:last-child {
     margin-bottom: 0; 
 }
+
+@media (max-width: 768px) {
+
+
+  h1 {
+    font-size: 22px;
+  }
+  h6, h2{
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  p{
+    font-size: 14px;
+  }
+}

@@ -47,12 +47,12 @@ h1 {
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  padding: 10px 20px;
+  //padding: 10px 20px;
   background-color: $secondary-color;
   color: $primary-color;
   gap: 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -68,4 +68,28 @@ h1 {
 .btn:active {
   background-color: darken($secondary-color, 15%);
   color: darken($primary-color, 15%);
+}
+
+.btn i {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 22px;
+  }
+  h2{
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  ul, li{
+    font-size: 13px;
+  }
+  .btn{
+  
+  font-size: 1.0rem;
+  }
+  .img-fluid {
+    max-height: 184px;
+  }
 }

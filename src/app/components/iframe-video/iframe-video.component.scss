@@ -69,3 +69,37 @@ p {
   background-color: darken($secondary-color, 15%); 
   color: darken($primary-color, 15%); 
 }
+
+@media (max-width: 600px) {
+
+
+  h1 {
+    font-size: 22px;
+  }
+
+  p{
+    font-size: 16px;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 100%;
+    border: 0;
+    object-fit: cover;
+  }
+  
+}
+
+@media (max-width: 800px) {
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border: 0;
+    object-fit: cover;
+  }
+}
