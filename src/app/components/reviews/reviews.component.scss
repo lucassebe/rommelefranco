@@ -6,6 +6,7 @@
     min-height: 400px;
   }
   
+  
   .cards-wrapper {
     display: flex;
     justify-content: center;
@@ -60,6 +61,7 @@
   
   .carousel-inner {
     padding: 1em;
+    min-height: 350px;
   }
   
   .carousel-control-prev,
@@ -68,7 +70,7 @@
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    top: 60%;
+    top: 50%;
     transform: translateY(-50%);
   }
   
@@ -112,10 +114,16 @@
 
 
   @media (max-width: 768px) {
+    .container-fluid{
+      min-height: 415px;
+    }
+
+
     .carousel-inner {
       display: flex;
       overflow: hidden;
       width: 100%;
+      min-height: 415px;
     }
   
     .carousel-item {
