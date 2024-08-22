@@ -9,11 +9,12 @@ import { WhatsappBtnComponent } from "./components/whatsapp-btn/whatsapp-btn.com
 import { MapComponent } from "./components/map/map.component";
 import { ReviewsComponent } from "./components/reviews/reviews.component";
 import { FooterComponent } from "./components/footer/footer.component";
+import { ContactsComponent } from "./components/contacts/contacts.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderTopComponent, HeaderSectionComponent, OurServicesComponent, AboutUsComponent, IframeVideoComponent, WhatsappBtnComponent, MapComponent, ReviewsComponent, FooterComponent],
+  imports: [RouterOutlet, HeaderTopComponent, HeaderSectionComponent, OurServicesComponent, AboutUsComponent, IframeVideoComponent, WhatsappBtnComponent, MapComponent, ReviewsComponent, FooterComponent, ContactsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

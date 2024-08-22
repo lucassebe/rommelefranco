@@ -1,0 +1,86 @@
+@import "../../../styles.scss";
+
+#contacts { 
+    background-color: $primary-color;
+    color: white;
+    width: 100%;
+}
+
+.contacts-content {
+    display: flex; /* Keep this for overall flex container */
+    flex-direction: row; /* Align items horizontally */
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Horizontally center items */
+    gap: 20px; 
+    flex-wrap: wrap;
+    /* Add padding to prevent content from touching the edges */
+    padding: 20px;
+}
+
+.content {
+    display: flex; /* Make .content a flex container too */
+    align-items: center; /* Vertically center items within .content */
+    gap: 80px; /* Adjust gap between icon and text within .content */
+    flex-wrap: wrap; 
+}
+
+.content p {
+    margin: 0; 
+    text-align: center; /* Center text within each p */
+}
+
+.instagram-container { /* Estilizando o contêiner do Instagram */
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espaçamento entre o ícone e o texto */
+}
+
+.instagram-container i { /* Estilizando o ícone do Instagram */
+    font-size: 24px; 
+    padding-right: 8px;
+}
+.instagram-container button { /* Removendo o estilo padrão do botão */
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer; 
+    font: inherit; 
+    color: inherit; 
+}
+
+
+@media (max-width: 768px) { 
+    #contacts { 
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    
+        justify-content: center; 
+    }
+
+    .contacts-content {
+        flex-direction: column; /* Alinha os elementos verticalmente em telas menores */
+        align-items: center;
+        justify-content: center;
+        gap: 10px; /* Reduz o espaçamento entre os elementos principais */
+        padding: 10px; /* Reduz o padding geral */
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px; /* Reduz o espaçamento entre ícone e texto */
+    }
+
+    .content p {
+        font-size: 14px; /* Diminui o tamanho da fonte dos parágrafos */
+    }
+
+    .instagram-container i {
+        font-size: 20px; /* Diminui o tamanho do ícone do Instagram */
+    }
+
+    .instagram-container span {
+        font-size: 14px; /* Diminui o tamanho da fonte do texto do Instagram */
+    }
+}
